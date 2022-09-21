@@ -534,25 +534,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mikal\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\dante\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mikal\\source\\repos\\All-Access-Project\\All-Access-Project\\All-Access-Project\\All-Access-Project.csproj",
+      "projectUniqueName": "C:\\Users\\dante\\Documents\\GitHub\\All-Access-Project\\All-Access-Project\\All-Access-Project\\All-Access-Project.csproj",
       "projectName": "All-Access-Project",
-      "projectPath": "C:\\Users\\mikal\\source\\repos\\All-Access-Project\\All-Access-Project\\All-Access-Project\\All-Access-Project.csproj",
-      "packagesPath": "C:\\Users\\mikal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mikal\\source\\repos\\All-Access-Project\\All-Access-Project\\All-Access-Project\\obj\\",
+      "projectPath": "C:\\Users\\dante\\Documents\\GitHub\\All-Access-Project\\All-Access-Project\\All-Access-Project\\All-Access-Project.csproj",
+      "packagesPath": "C:\\Users\\dante\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dante\\Documents\\GitHub\\All-Access-Project\\All-Access-Project\\All-Access-Project\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\mikal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\dante\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -602,7 +602,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.412\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

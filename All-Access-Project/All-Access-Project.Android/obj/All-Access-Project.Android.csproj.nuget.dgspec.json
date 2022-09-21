@@ -1,26 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mikal\\source\\repos\\All-Access-Project\\All-Access-Project\\All-Access-Project.Android\\All-Access-Project.Android.csproj": {}
+    "C:\\Users\\dante\\Documents\\GitHub\\All-Access-Project\\All-Access-Project\\All-Access-Project.Android\\All-Access-Project.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mikal\\source\\repos\\All-Access-Project\\All-Access-Project\\All-Access-Project.Android\\All-Access-Project.Android.csproj": {
+    "C:\\Users\\dante\\Documents\\GitHub\\All-Access-Project\\All-Access-Project\\All-Access-Project.Android\\All-Access-Project.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mikal\\source\\repos\\All-Access-Project\\All-Access-Project\\All-Access-Project.Android\\All-Access-Project.Android.csproj",
+        "projectUniqueName": "C:\\Users\\dante\\Documents\\GitHub\\All-Access-Project\\All-Access-Project\\All-Access-Project.Android\\All-Access-Project.Android.csproj",
         "projectName": "All-Access-Project.Android",
-        "projectPath": "C:\\Users\\mikal\\source\\repos\\All-Access-Project\\All-Access-Project\\All-Access-Project.Android\\All-Access-Project.Android.csproj",
-        "packagesPath": "C:\\Users\\mikal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mikal\\source\\repos\\All-Access-Project\\All-Access-Project\\All-Access-Project.Android\\obj\\",
+        "projectPath": "C:\\Users\\dante\\Documents\\GitHub\\All-Access-Project\\All-Access-Project\\All-Access-Project.Android\\All-Access-Project.Android.csproj",
+        "packagesPath": "C:\\Users\\dante\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dante\\Documents\\GitHub\\All-Access-Project\\All-Access-Project\\All-Access-Project.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\mikal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\dante\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "monoandroid11.0"
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid11.0": {
             "projectReferences": {
-              "C:\\Users\\mikal\\source\\repos\\All-Access-Project\\All-Access-Project\\All-Access-Project\\All-Access-Project.csproj": {
-                "projectPath": "C:\\Users\\mikal\\source\\repos\\All-Access-Project\\All-Access-Project\\All-Access-Project\\All-Access-Project.csproj"
+              "C:\\Users\\dante\\Documents\\GitHub\\All-Access-Project\\All-Access-Project\\All-Access-Project\\All-Access-Project.csproj": {
+                "projectPath": "C:\\Users\\dante\\Documents\\GitHub\\All-Access-Project\\All-Access-Project\\All-Access-Project\\All-Access-Project.csproj"
               }
             }
           }
@@ -54,22 +54,22 @@
         }
       }
     },
-    "C:\\Users\\mikal\\source\\repos\\All-Access-Project\\All-Access-Project\\All-Access-Project\\All-Access-Project.csproj": {
+    "C:\\Users\\dante\\Documents\\GitHub\\All-Access-Project\\All-Access-Project\\All-Access-Project\\All-Access-Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mikal\\source\\repos\\All-Access-Project\\All-Access-Project\\All-Access-Project\\All-Access-Project.csproj",
+        "projectUniqueName": "C:\\Users\\dante\\Documents\\GitHub\\All-Access-Project\\All-Access-Project\\All-Access-Project\\All-Access-Project.csproj",
         "projectName": "All-Access-Project",
-        "projectPath": "C:\\Users\\mikal\\source\\repos\\All-Access-Project\\All-Access-Project\\All-Access-Project\\All-Access-Project.csproj",
-        "packagesPath": "C:\\Users\\mikal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mikal\\source\\repos\\All-Access-Project\\All-Access-Project\\All-Access-Project\\obj\\",
+        "projectPath": "C:\\Users\\dante\\Documents\\GitHub\\All-Access-Project\\All-Access-Project\\All-Access-Project\\All-Access-Project.csproj",
+        "packagesPath": "C:\\Users\\dante\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dante\\Documents\\GitHub\\All-Access-Project\\All-Access-Project\\All-Access-Project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\mikal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\dante\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -119,7 +119,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.412\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
