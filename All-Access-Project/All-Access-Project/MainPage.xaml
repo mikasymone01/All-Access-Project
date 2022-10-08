@@ -19,6 +19,8 @@
                 </FormattedString>
             </Label.FormattedText>
         </Label>
+
+        <Button Text="Connect with server" BackgroundColor="Purple" TextColor="Red" Clicked="Button_Clicked"/>
     </StackLayout>
 
 </ContentPage>

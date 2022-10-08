@@ -105,11 +105,43 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
+            "AWSSDK.CognitoIdentity": {
+              "target": "Package",
+              "version": "[3.7.0.209, )"
+            },
+            "AWSSDK.CognitoIdentityProvider": {
+              "target": "Package",
+              "version": "[3.7.6.9, )"
+            },
+            "AWSSDK.CognitoSync": {
+              "target": "Package",
+              "version": "[3.7.1.205, )"
+            },
+            "AWSSDK.Core": {
+              "target": "Package",
+              "version": "[3.7.13.7, )"
+            },
+            "AWSSDK.Mobile": {
+              "target": "Package",
+              "version": "[3.7.0.210, )"
+            },
+            "AWSSDKCPP-S3": {
+              "target": "Package",
+              "version": "[1.6.20060301.25, )"
+            },
+            "AWSSDKCPP-S3-Encryption": {
+              "target": "Package",
+              "version": "[1.6.25, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",

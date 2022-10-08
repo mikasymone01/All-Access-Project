@@ -5,7 +5,12 @@
       "ProjectGuid": "f3ca42a9-6630-4d9a-bcae-273430ac4504",
       "DisplayName": "All-Access-Project",
       "ColorIndex": 0
+    },
+    "b2cee735-057a-480b-b9de-654197ac0cf3": {
+      "ProjectGuid": "b2cee735-057a-480b-b9de-654197ac0cf3",
+      "DisplayName": "All-Access-Project.Android",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }
