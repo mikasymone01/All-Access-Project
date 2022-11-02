@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("All-Access-Project.App.xaml", "App.xaml", typeof(global::All_Access_Project.App))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("All_Access_Project.App.xaml", "App.xaml", typeof(global::All_Access_Project.App))]
 
 namespace All_Access_Project {
     

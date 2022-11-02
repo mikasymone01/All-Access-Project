@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell       xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local ="clr-namespace:All_Access_Project"
+             x:Class="All_Access_Project.AppShell">
+
+
+    <TabBar >
+        <Tab Title="Home" Icon="{local:ImageResource All_Access_Project.Images.home.png}">
+            <ShellContent>
+                <local:HomePage />
+            </ShellContent>
+        </Tab>
+
+        <Tab Title="Reviews" Icon="{local:ImageResource All_Access_Project.Images.brush.png}">
+            <ShellContent>
+                <local:Reviews />
+            </ShellContent>
+        </Tab>
+        <Tab Title="Profile" Icon="{local:ImageResource All_Access_Project.Images.person.png}">
+            <ShellContent>
+                <local:UserProfile/>
+            </ShellContent>
+        </Tab>
+        <Tab Title="Reviewsss">
+            <ShellContent>
+                <local:ReviewTemplate/>
+            </ShellContent>
+        </Tab>
+    </TabBar>
+</Shell>

@@ -1,0 +1,73 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\brush.png" />
+    <None Remove="Images\FosterHall.jpeg" />
+    <None Remove="Images\home.png" />
+    <None Remove="Images\person.png" />
+    <None Remove="Images\vsu.png" />
+    <None Remove="Images\vsu1882.svg" />
+    <None Remove="Images\vsulogo.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Images\brush.png" />
+    <EmbeddedResource Include="Images\FosterHall.jpeg" />
+    <EmbeddedResource Include="Images\home.png" />
+    <EmbeddedResource Include="Images\person.png" />
+    <EmbeddedResource Include="Images\vsu.png" />
+    <EmbeddedResource Include="Images\vsu1882.svg" />
+    <EmbeddedResource Include="Images\vsulogo.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="HomePage.xaml.cs">
+      <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="ReviewTemplate.xaml.cs">
+      <DependentUpon>ReviewTemplate.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="AppShell.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ReviewTemplate.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Reviews.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UserProfile.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="FlyoutPage1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="FlyoutPage1Detail.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="FlyoutPage1Flyout.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+</Project>

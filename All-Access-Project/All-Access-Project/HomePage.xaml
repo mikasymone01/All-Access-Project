@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:All_Access_Project"
+             x:Class="All_Access_Project.HomePage"
+             Shell.NavBarIsVisible="False">
+
+    <StackLayout >
+        <Label Text="All-Access" Padding="0, 20, 0, 0" TextColor="Black" FontSize="55" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+        <Line  X1 ="30" X2="380" Stroke="#0047bb" StrokeThickness="10"/>
+
+        <Label Text="Accessibility review app for Virginia State University's campus" FontSize="25" 
+               TextColor="Black" LineBreakMode="WordWrap"
+               HorizontalTextAlignment="Center"/>
+
+        <Frame HeightRequest="380" 
+                   WidthRequest="280"
+                   CornerRadius="10"
+                   Margin="10" Padding="0"
+                   BackgroundColor="Wheat"
+                   HorizontalOptions="CenterAndExpand">
+            <Grid>
+                <StackLayout>
+                    <Image Source="https://www.vsu.edu/files/images/callouts/vsu-campus-tour-cta.jpg" 
+                               Aspect="AspectFill" VerticalOptions="FillAndExpand"/>
+                </StackLayout>
+
+                <StackLayout >
+                    <Image Source="{local:ImageResource All-Access-Project.Images.vsulogo.jpg}" VerticalOptions="CenterAndExpand" />
+                    <Label Text=" Rating: 4/5" FontSize="30"
+                           BackgroundColor="#eb7722"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            HorizontalTextAlignment="Center"
+               />
+                </StackLayout>
+                
+                
+            </Grid>
+        </Frame>
+
+        <Label Text="&quot;Greater Happens Here&quot; " FontSize="30"
+               Padding="20" HorizontalTextAlignment="Center"
+               FontAttributes="Italic"/>
+
+    </StackLayout>
+
+</ContentPage>
+ 

@@ -3,15 +3,8 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "All-Access-Project.Android.dll" comes first in this list. */
 		"All-Access-Project.Android.dll",
-		"All-Access-Project.dll",
-		"AWSSDK.CognitoIdentity.dll",
-		"AWSSDK.CognitoIdentityProvider.dll",
-		"AWSSDK.CognitoSync.dll",
-		"AWSSDK.Core.dll",
-		"AWSSDK.Mobile.dll",
-		"AWSSDK.SecurityToken.dll",
+		"All_Access_Project.dll",
 		"FormsViewGroup.dll",
-		"Microsoft.Bcl.AsyncInterfaces.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",
 		"Xamarin.AndroidX.Annotation.Experimental.dll",
