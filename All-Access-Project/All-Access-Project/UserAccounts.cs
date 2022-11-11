@@ -6,7 +6,7 @@ using SQLite;
 
 namespace All_Access_Project
 {
-    internal class UserAccounts
+    public class UserAccounts
     {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }

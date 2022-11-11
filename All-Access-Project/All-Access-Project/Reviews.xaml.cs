@@ -20,7 +20,7 @@ namespace All_Access_Project
             this.BindingContext = new ReviewItemViewModel();
         }
 
-        protected override void OnAppearing()
+        protected override async void OnAppearing()
         {
             base.OnAppearing();
             var temp = this.BindingContext;

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="All_Access_Project.UserAccountDetails">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Placeholder="First Name"
+                   x:Name="nameEntry"/>
+            <Entry Placeholder="Last Name"
+                   x:Name="LastName"/>
+            <Entry Placeholder="Email"
+                   x:Name="Email"/>
+            <Entry Placeholder="Password"
+                   x:Name="Password"/>
+            <Button Text="Save"
+                    Clicked="Button_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
