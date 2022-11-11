@@ -15,6 +15,7 @@ namespace All_Access_Project
         public string lastName { get; set; }
         public string email { get; set; }
         public string password { get; set; }
+        
 
     }
 }
