@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:All_Access_Project"
+             x:Class="All_Access_Project.BuildingList"
+             Shell.NavBarIsVisible="False">
+    
+    <ContentPage.BindingContext>
+        <local:BuildingItemViewModel/>
+    </ContentPage.BindingContext>
+
+
+    <StackLayout>
+        <Label Text="Buildings List" FontSize="30" HorizontalTextAlignment="Center" 
+               Padding="0,10,0,0" TextColor="Black" FontAttributes="Bold"/>
+        <Line  X1 ="0" X2="420" Stroke="#0047bb" StrokeThickness="6"/>
+        <Button Text="+" FontSize="30" Command="{Binding NewBuildingForm}" TranslationX="175" TranslationY="-62"
+                HorizontalOptions="Center" FontAttributes="Bold" BackgroundColor="DarkOrange" Scale=".5"/>
+        <ListView x:Name="BuildingListView" ItemsSource="{Binding BuildingItems}" >
+            <ListView.ItemTemplate>
+                
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                        <Grid>
+                            <Label Text="{Binding BuildingName}" FontSize="20" Padding="5"/>
+                            
+                        </Grid>
+                        </ViewCell.View>
+                    </ViewCell>
+
+
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

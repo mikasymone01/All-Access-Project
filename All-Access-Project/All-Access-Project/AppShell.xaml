@@ -12,20 +12,18 @@
             </ShellContent>
         </Tab>
 
-        <Tab Title="Reviews" Icon="{local:ImageResource All_Access_Project.Images.brush.png}">
+        <Tab Title="Buildings" Icon="{local:ImageResource All_Access_Project.Images.brush.png}">
             <ShellContent>
-                <local:Reviews />
+                <local:BuildingList />
             </ShellContent>
         </Tab>
+        
         <Tab Title="Profile" Icon="{local:ImageResource All_Access_Project.Images.person.png}">
             <ShellContent>
                 <local:UserProfile/>
             </ShellContent>
         </Tab>
-        <Tab Title="Reviewsss">
-            <ShellContent>
-                <local:ReviewTemplate/>
-            </ShellContent>
-        </Tab>
+       
+
     </TabBar>
 </Shell>

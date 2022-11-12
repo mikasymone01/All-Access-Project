@@ -37,11 +37,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="BuildingForm.xaml.cs">
+      <DependentUpon>BuildingForm.xaml</DependentUpon>
+    </Compile>
     <Compile Update="HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
-    <Compile Update="ReviewTemplate.xaml.cs">
-      <DependentUpon>ReviewTemplate.xaml</DependentUpon>
+    <Compile Update="ReviewForm.xaml.cs">
+      <DependentUpon>ReviewForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="BuildingList.xaml.cs">
+      <DependentUpon>BuildingList.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
@@ -49,13 +55,13 @@
     <EmbeddedResource Update="AppShell.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="ReviewTemplate.xaml">
+    <EmbeddedResource Update="BuildingForm.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Reviews.xaml">
+    <EmbeddedResource Update="ReviewForm.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="UserAccountDetails.xaml">
+    <EmbeddedResource Update="BuildingList.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="UserProfile.xaml">

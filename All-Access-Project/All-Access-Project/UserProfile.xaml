@@ -4,9 +4,8 @@
              x:Class="All_Access_Project.UserProfile">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="I am the User's Profile"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Button Text="Create an account"/>
+            <Button Text="Login"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

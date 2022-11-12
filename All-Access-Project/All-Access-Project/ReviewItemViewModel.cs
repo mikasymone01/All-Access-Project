@@ -28,21 +28,10 @@ namespace All_Access_Project
             }
             
         }
-        
-        public ReviewItemViewModel()
-        {
-            ReviewItems = new ObservableCollection<ReviewItem>();
-
-            ReviewItems.Add(new ReviewItem(5, "Good Food"));
-            ReviewItems.Add(new ReviewItem(3, "Bad Food Really awfule. Blah blah heaadhd dwoduef  fkjejf fefj fef hfehf fiefi hfm nelfihwk fjbr.kf hw; fwufh wiu fhwf"));
-            ReviewItems.Add(new ReviewItem(2, "OK Food"));
-        }
-
-        
-
 
         private int _NewReviewRatingValue;
-        public int NewReviewRatingValue {
+        public int NewReviewRatingValue
+        {
             set
             {
                 _NewReviewRatingValue = value;
@@ -63,16 +52,49 @@ namespace All_Access_Project
 
         }
 
-
-        public ICommand AddReviewCommand => new Command(AddReviewItem);
-        void AddReviewItem()
+        private ReviewForm _reviewForm;
+        public ReviewForm reviewForm
         {
-            Console.WriteLine(NewReviewInputValue);
-            ReviewItems.Add(new ReviewItem(NewReviewRatingValue, NewReviewInputValue));
-            OnPropertyChanged(nameof(ReviewItems));
-            Console.WriteLine(ReviewItems.Count);
+            set
+            {
+                _reviewForm = value;
+                OnPropertyChanged(nameof(_reviewForm));
+            }
+            get => _reviewForm;
         }
 
+        public ReviewItemViewModel()
+        {
+            
+            if (ReviewItems == null)
+            {
+                Console.WriteLine("Making a new OC");
+                ReviewItems = new ObservableCollection<ReviewItem>();
+                ReviewItems.Add(new ReviewItem(5, "Good Food", null));
+                ReviewItems.Add(new ReviewItem(3, "Bad Food Really awfule. Blah blah heaadhd dwoduef  fkjejf fefj fef hfehf fiefi hfm nelfihwk fjbr.kf hw; fwufh wiu fhwf", null));
+                ReviewItems.Add(new ReviewItem(2, "OK Food", null));
+            }
+
+            
+        }
+
+        
+
+        public ICommand AddReviewCommand => new Command(AddReviewItem);
+        async void AddReviewItem()
+        {
+            Console.WriteLine(NewReviewInputValue);
+            ReviewItems.Add(new ReviewItem(NewReviewRatingValue, NewReviewInputValue, reviewForm));
+            OnPropertyChanged(nameof(ReviewItems));
+            Console.WriteLine(ReviewItems.Count);
+            await Application.Current.MainPage.Navigation.PopAsync();
+
+            
+        }
+        public ICommand AddReviewComplete => new Command(async () =>
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new ReviewForm());
+        });
       
 
     }

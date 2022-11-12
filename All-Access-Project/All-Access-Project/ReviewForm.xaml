@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:All_Access_Project"
+             x:Class="All_Access_Project.ReviewForm"
+             >
+
+    <ContentPage.BindingContext>
+        <local:ReviewItemViewModel/>
+    </ContentPage.BindingContext>
+    
+    
+    <StackLayout Margin="5">
+        <Label Text="Review this Building" TextColor="Black" FontSize="35" FontAttributes="Bold"/>
+        <Label Text="How would you rate this building out of 5?" FontSize="20"/>
+        <StackLayout  RadioButtonGroup.GroupName ="ReviewValue" RadioButtonGroup.SelectedValue="{Binding NewReviewRatingValue, Mode=TwoWay}" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+
+            <RadioButton Content="1" Value="1"/>
+            <RadioButton Content="2" Value="2"/>
+            <RadioButton Content="3" Value="3"/>
+            <RadioButton Content="4" Value="4"/>
+            <RadioButton Content="5" Value="5"/>
+        </StackLayout>
+
+        <Label Text="Tell us about your experience:" FontSize="20"/>
+        <Editor Placeholder="Type here" Text="{Binding NewReviewInputValue, Mode=TwoWay}" HeightRequest="200" Margin="20,0,20,20"/>
+
+        <Button Text="Submit Review" Margin="0,70,0,0" Command="{Binding AddReviewCommand}"/>
+    </StackLayout>
+</ContentPage>

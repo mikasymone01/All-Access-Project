@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:All_Access_Project"
+             x:Class="All_Access_Project.BuildingForm"
+             >
+    <ContentPage.BindingContext>
+        <local:BuildingItemViewModel/>
+    </ContentPage.BindingContext>
+        
+        <StackLayout Padding="5">
+            <Label Text ="Building Name" FontSize ="18" TextColor="Black"/>
+            <Entry Placeholder="Enter Building Name" Text="{Binding BuildingName}"/>
+
+            <Label Text ="Building Department" FontSize ="18" TextColor="Black"/>
+            <Entry Placeholder="Enter Building Name" Text="{Binding DepartmentName}"/>
+            
+            <Label Text ="Department Head" FontSize ="18" TextColor="Black"/>
+            <Entry Placeholder="Enter Building Name" Text="{Binding DepartmentHead}"/>
+
+            <Label Text ="Department Head Email" FontSize ="18" TextColor="Black"/>
+            <Entry Placeholder="Enter Building Name" Text="{Binding DepartmentContact}"/>
+
+            <Label Text ="Building Description" FontSize ="18" TextColor="Black"/>
+            <Editor Placeholder="Type building descripton: " HeightRequest="120" Text="{Binding BuildingDesc}"/>
+            <Button Text="Submit" Command="{Binding AddBuildingCommand}"/>
+        </StackLayout>
+    
+</ContentPage>
