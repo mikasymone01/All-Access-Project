@@ -16,7 +16,7 @@ namespace All_Access_Project
         public BuildingList()
         {
             InitializeComponent();
-           
+            BindingContext = new BuildingItemViewModel();
         }
 
         protected override void OnAppearing()
@@ -25,11 +25,20 @@ namespace All_Access_Project
             Console.WriteLine("Changin View");
             
         }
-        
-       
-    }
-    
 
-       
+        private async void OnItemSelected(object sender, ItemTappedEventArgs e)
+        {
+            Console.WriteLine("Itemselected");
+            BuildingsPage building = new BuildingsPage();
+            building.BindingContext = e.Item;
+            Console.WriteLine(e.Item);
+            await Application.Current.MainPage.Navigation.PushAsync(building);
+        }
+
+
     }
+
+
+
+}
     

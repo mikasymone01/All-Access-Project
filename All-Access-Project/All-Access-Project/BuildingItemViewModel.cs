@@ -88,9 +88,17 @@ namespace All_Access_Project
             if(BuildingItems == null)
             {
                 BuildingItems = new ObservableCollection<BuildingItem>();
+                BuildingItems.Add(new BuildingItem("Langston","Youeefihefkh", null,null,null));
+                BuildingItems.Add(new BuildingItem("Hunter", "Blahhhh", null, null, null));
+
             }
             
         }
+
+        public ICommand NewBuildingForm => new Command(async () =>
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new BuildingForm());
+        });
 
         public ICommand AddBuildingCommand => new Command(AddBuildingItem);
         async void AddBuildingItem()
@@ -101,10 +109,16 @@ namespace All_Access_Project
 
 
         }
-        public ICommand NewBuildingForm => new Command(async () =>
+       
+
+        /*public ICommand OnItemSelected => new Command(async () =>
         {
-            await Application.Current.MainPage.Navigation.PushAsync(new BuildingForm());
-        });
+            Console.WriteLine("Itemselected");
+            BuildingsPage buildings = this.OnItemSelected as BuildingsPage;
+            await Application.Current.MainPage.Navigation.PushAsync(buildings);
+        });*/
+
+
 
     }
 }

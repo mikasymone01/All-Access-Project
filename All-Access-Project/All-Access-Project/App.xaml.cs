@@ -19,7 +19,7 @@ namespace All_Access_Project
                     "MyStore.db3"));
                 }
                 return db;
-                
+
             }
         }
         public App()
@@ -42,3 +42,4 @@ namespace All_Access_Project
         }
     }
 }
+
