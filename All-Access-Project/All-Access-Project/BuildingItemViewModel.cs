@@ -100,6 +100,7 @@ namespace All_Access_Project
             await Application.Current.MainPage.Navigation.PushAsync(new BuildingForm());
         });
 
+
         public ICommand AddBuildingCommand => new Command(AddBuildingItem);
         async void AddBuildingItem()
         {
