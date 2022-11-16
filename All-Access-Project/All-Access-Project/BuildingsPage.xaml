@@ -2,16 +2,50 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:All_Access_Project"
-             x:Class="All_Access_Project.BuildingsPage">
+             x:Class="All_Access_Project.BuildingsPage"
+             >
     
     <ContentPage.BindingContext>
         <local:BuildingItemViewModel/>
     </ContentPage.BindingContext>
-    
-    
-        <StackLayout>
-            <Label Text="{Binding BuildingName}"/>
-            <Label Text="{Binding BuildingDescription}"/>
+
+
+    <StackLayout>
+        <Label Text="{Binding BuildingName}" FontSize="30" HorizontalTextAlignment="Center" Padding="0,5,0,0" 
+                   TextColor="Black" FontAttributes="Bold"/>
+        <Line  X1 ="0" X2="420" Stroke="DarkOrange" StrokeThickness="6"/>
+        <Label Text="{Binding BuildingDescription}" FontSize="20" Margin="8" TextColor="Black"/>
+        <Label Text="{Binding DepartmentName}" FontSize="20" TextColor="Black" HorizontalTextAlignment="End"/>
+        <Label Text="{Binding DepartmentHead}" FontSize="20" TextColor="Black" HorizontalTextAlignment="End"/>
+        <Label Text="{Binding DepartmentContact}" FontSize="20" TextColor="Black" HorizontalTextAlignment="End"/>
+
+            <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Reviews" FontSize="25" Margin="5,16,0,0" TextColor="Black" FontAttributes="Bold"/>
+                <Button Text="Make Review" Command="{Binding Source={local:ReviewItemViewModel},Path=ReviewFormCommand}" Margin="180,10,0,0"/>
+            </StackLayout>
+            <Line  X1 ="0" X2="420" Stroke="DarkOrange" StrokeThickness="6"/>
+            <ListView x:Name="BuildingReviewSection" ItemsSource="{Binding Source= {local:ReviewItemViewModel},Path=ReviewItems}"
+                      HasUnevenRows="True">
+                <ListView.ItemTemplate >
+                    <DataTemplate>
+                        <ViewCell >
+                            <ViewCell.View >
+                                <Grid RowSpacing=".3" >
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+                                    <Label Grid.Column="0" Text="{Binding ReviewRating}" FontSize="25" />
+                                    <Label Grid.Column="0" Grid.Row="1" Text="{Binding ReviewText}" FontSize="25" MinimumHeightRequest="60"  
+                                           LineBreakMode="WordWrap" Padding="0"/>
+                                </Grid>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
     </StackLayout>
    
 </ContentPage>

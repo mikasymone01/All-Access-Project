@@ -22,7 +22,7 @@
             <Entry Placeholder="Enter Building Name" Text="{Binding DepartmentContact}"/>
 
             <Label Text ="Building Description" FontSize ="18" TextColor="Black"/>
-            <Editor Placeholder="Type building descripton: " HeightRequest="120" Text="{Binding BuildingDesc}"/>
+            <Editor Placeholder="Type building descripton: " HeightRequest="120" Text="{Binding BuildingDescription}"/>
             <Button Text="Submit" Command="{Binding AddBuildingCommand}"/>
         </StackLayout>
     

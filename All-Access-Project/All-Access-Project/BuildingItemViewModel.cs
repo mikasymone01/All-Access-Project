@@ -39,15 +39,15 @@ namespace All_Access_Project
             get => _BuildingName;
         }
 
-        private string _BuildingDesc;
-        public string BuildingDesc
+        private string _BuildingDescription;
+        public string BuildingDescription
         {
             set
             {
-                _BuildingDesc= value;
-                OnPropertyChanged(nameof(_BuildingDesc));
+                _BuildingDescription= value;
+                OnPropertyChanged(nameof(_BuildingDescription));
             }
-            get => _BuildingDesc;
+            get => _BuildingDescription;
         }
 
         private string _DepartmenName;
@@ -88,7 +88,8 @@ namespace All_Access_Project
             if(BuildingItems == null)
             {
                 BuildingItems = new ObservableCollection<BuildingItem>();
-                BuildingItems.Add(new BuildingItem("Langston","Youeefihefkh", null,null,null));
+                BuildingItems.Add(new BuildingItem("Langston","Youeefihefkhngghc yt diyt d uf ytdyhgc t y tdkhgkhy k uyfkuyfj " +
+                    "y ku6u65d kuyvuktf i6  uygkufi6tfd ,ufluflufkuyfy fuyjfku fo6 yljglj gljhg", null,null,null));
                 BuildingItems.Add(new BuildingItem("Hunter", "Blahhhh", null, null, null));
 
             }
@@ -104,8 +105,10 @@ namespace All_Access_Project
         public ICommand AddBuildingCommand => new Command(AddBuildingItem);
         async void AddBuildingItem()
         {
-            BuildingItems.Add(new BuildingItem(BuildingName, BuildingDesc, DepartmentName, DepartmentHead, DepartmentContact));
+            var newBuilding= new BuildingItem(BuildingName, BuildingDescription, DepartmentName, DepartmentHead, DepartmentContact);
+            BuildingItems.Add(newBuilding);
             OnPropertyChanged(nameof(BuildingItems));
+            Console.WriteLine(App.All_Access_Database.ReadBuildings());
             await Application.Current.MainPage.Navigation.PopAsync();
 
 

@@ -91,7 +91,7 @@ namespace All_Access_Project
 
             
         }
-        public ICommand AddReviewComplete => new Command(async () =>
+        public ICommand ReviewFormCommand => new Command(async () =>
         {
             await Application.Current.MainPage.Navigation.PushAsync(new ReviewForm());
         });
