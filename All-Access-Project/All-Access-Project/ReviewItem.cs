@@ -5,13 +5,13 @@
         public int ReviewRating { get; set; }
         public string ReviewText { get; set; }
 
-        public ReviewForm ReviewPage { get; set; }
+        public string ReviewBuildingName { get; set; }
 
-        public ReviewItem(int ReviewRating, string ReviewText, ReviewForm ReviewPage)
+        public ReviewItem(int ReviewRating, string ReviewText, string ReviewBuildingName)
         {
             this.ReviewRating = ReviewRating;
             this.ReviewText = ReviewText;
-            this.ReviewPage = ReviewPage;
+            this.ReviewBuildingName = ReviewBuildingName;
         }
 
     }

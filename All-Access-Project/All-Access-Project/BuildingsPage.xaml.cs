@@ -12,9 +12,15 @@ namespace All_Access_Project
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class BuildingsPage : ContentPage
     {
+        public string buildingName;
+
         public BuildingsPage()
         {
             InitializeComponent();
+            buildingName = BuildingNameTitle.Text;
+            
         }
+
+
     }
 }

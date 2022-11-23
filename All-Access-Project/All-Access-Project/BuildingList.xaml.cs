@@ -33,6 +33,7 @@ namespace All_Access_Project
             building.BindingContext = e.Item;
             Console.WriteLine(e.Item);
             await Application.Current.MainPage.Navigation.PushAsync(building);
+            
         }
 
 
