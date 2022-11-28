@@ -27,7 +27,7 @@
                     <ViewCell>
                         <ViewCell.View>
                         <Grid>
-                                <Label Text="{Binding BuildingName}" FontSize="20" Padding="5"/>
+                                <Label Text="{Binding BuildingName}" FontSize="20" Padding="5" TextColor="Black"/>
                             </Grid>
                         </ViewCell.View>
                     </ViewCell>

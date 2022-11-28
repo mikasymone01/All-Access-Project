@@ -119,24 +119,17 @@ namespace All_Access_Project
             {
                 Console.WriteLine("Making a new OC");
                 ReviewItems = new ObservableCollection<ReviewItem>();
-                ReviewItems.Add(new ReviewItem(5, "Good Food", "Langston"));
-                ReviewItems.Add(new ReviewItem(3, "Bad Food Really awfule. Blah blah heaadhd dwoduef  fkjejf fefj fef hfehf fiefi hfm nelfihwk fjbr.kf hw; fwufh wiu fhwf", "Hunter"));
-                ReviewItems.Add(new ReviewItem(2, "OK Food", "Hunter"));
+                ReviewItems.Add(new ReviewItem(3, "A very nice freshman dorm.There are only stairs to go in through the front entrance." +
+                    "A wheelcahir user would have to enter through the back ramp which needs to be unlocked by faculty. There is an elevator inside, " +
+                    "but it would constantly break throughout the year.", "Langston"));
+                ReviewItems.Add(new ReviewItem(3, "Its a big building so navigation was difficult and The elevators are extremely slow. Other than that, I loved having classes in this building.", "Hunter McDaniel"));
+                ReviewItems.Add(new ReviewItem(2, "Having to wait 20 minutes for an elevator is awful. The classroom are spacious though", "Hunter McDaniel"));
             }
             
             //Attempt to filter the ReivewItems for each page. The problem is ReviewItemViewModel() runs
             //before the Command PushNewReviewForm. PushNewReviewForm is important because that is how you
             //access the name of the building being clicked on (string BuildingName)
-            for(int i = 0; i < ReviewItems.Count; i++)
-            {
-                Console.WriteLine("For loop accessed");
-                Console.WriteLine(currentName);
-                if(ReviewItems[i].ReviewBuildingName == currentName)
-                {
-                    Console.WriteLine("If loop accessed");
-                    SortedReviewItems.Add(ReviewItems[i]);
-                }
-            }
+            
 
         }
 
