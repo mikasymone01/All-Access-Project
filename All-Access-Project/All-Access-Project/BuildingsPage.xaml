@@ -14,19 +14,22 @@
         <Label x:Name="BuildingNameTitle" Text="{Binding BuildingName}"  FontSize="30" HorizontalTextAlignment="Center" Padding="0,5,0,0" 
                    TextColor="Black" FontAttributes="Bold"/>
         <Line  X1 ="0" X2="420" Stroke="DarkOrange" StrokeThickness="6"/>
-        <Label Text="{Binding BuildingDescription}" FontSize="20" Margin="8" TextColor="Black"/>
-        <Label Text="{Binding DepartmentName}" FontSize="20" TextColor="Black" HorizontalTextAlignment="End"/>
-        <Label Text="{Binding DepartmentHead}" FontSize="20" TextColor="Black" HorizontalTextAlignment="End"/>
-        <Label Text="{Binding DepartmentContact}" FontSize="20" TextColor="Black" HorizontalTextAlignment="End"/>
+        <Label Text="{Binding BuildingDescription}" FontSize="22" Margin="5,0,5,5" TextColor="Black"/>
+        <Label Text="{Binding DepartmentName}" FontSize="20" TextColor="Black" HorizontalTextAlignment="End" Margin="0,0,5,0"/>
+        <Label Text="{Binding DepartmentHead}" FontSize="20" TextColor="Black" HorizontalTextAlignment="End" Margin="0,0,5,0"/>
+        <Label Text="{Binding DepartmentContact}" FontSize="20" TextColor="Black" HorizontalTextAlignment="End" Margin="0,0,5,0"/>
 
-            <StackLayout>
+        
+        
+            <StackLayout Padding="0,5,0,0">
             <StackLayout Orientation="Horizontal">
                 <Label Text="Reviews" FontSize="25" Margin="5,16,0,0" TextColor="Black" FontAttributes="Bold"/>
-                <Button Text="Make Review" Command="{Binding Source={local:ReviewItemViewModel},Path=ReviewFormCommand}" CommandParameter="{Binding BuildingName}" Margin="180,10,0,0"/>
+                <Button Text="Make Review" Command="{Binding Source={local:ReviewItemViewModel},Path=ReviewFormCommand}" 
+                        CommandParameter="{Binding BuildingName}" Margin="185,10,0,0"/>
             </StackLayout>
             <Line  X1 ="0" X2="420" Stroke="DarkOrange" StrokeThickness="6"/>
             <ListView x:Name="BuildingReviewSection" ItemsSource="{Binding Source= {local:ReviewItemViewModel},Path=SortedReviewItems}"
-                      HasUnevenRows="True">
+                      HasUnevenRows="True" Margin="6,0,2,0" >
                 <ListView.ItemTemplate >
                     <DataTemplate>
                         <ViewCell >
@@ -36,9 +39,9 @@
                                         <RowDefinition Height="Auto"/>
                                         <RowDefinition/>
                                     </Grid.RowDefinitions>
-                                    <Label Grid.Column="0" Text="{Binding ReviewRating}" FontSize="25" />
-                                    <Label Grid.Column="0" Grid.Row="1" Text="{Binding ReviewText}" FontSize="25" MinimumHeightRequest="60"  
-                                           LineBreakMode="WordWrap" Padding="0"/>
+                                    <Label Grid.Column="0" Text="{Binding ReviewRating, StringFormat='Rating: {0}/5'}" FontSize="23" TextColor="Black" />
+                                    <Label Grid.Column="0" Grid.Row="1" Text="{Binding ReviewText}" FontSize="22" MinimumHeightRequest="60"  
+                                           LineBreakMode="WordWrap" Padding="0" TextColor="Black"/>
                                 </Grid>
                             </ViewCell.View>
                         </ViewCell>

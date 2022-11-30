@@ -83,15 +83,18 @@ namespace All_Access_Project
             get => _DepartmentContact;
         }
 
+
+
         public BuildingItemViewModel()
         {
             if(BuildingItems == null)
             {
                 BuildingItems = new ObservableCollection<BuildingItem>();
-                BuildingItems.Add(new BuildingItem("Langston","Youeefihefkhngghc yt diyt d uf ytdyhgc t y tdkhgkhy k uyfkuyfj " +
-                    "y ku6u65d kuyvuktf i6  uygkufi6tfd ,ufluflufkuyfy fuyjfku fo6 yljglj gljhg", null,null,null));
-                BuildingItems.Add(new BuildingItem("Hunter", "Blahhhh", null, null, null));
-
+                BuildingItems.Add(new BuildingItem("Langston","A freshman dorm with a STEM Living Learning Community"
+                    , "Residence Hall","Mr.Johnson", "(804) 524-1066"));
+                BuildingItems.Add(new BuildingItem("Hunter McDaniel", "An education building that hosts classes for Psychology, Nursing, Chemistry, and Computer Science Majors",
+                    "College of Natural and Health Sciences", "Dean Dawit Haile", "804-524-5969"));
+                BuildingItems.Add(new BuildingItem("Jones Dining Hall", "Dining Hall for students and faculty to eat at","Dining Hall", null, null));
             }
             
         }
@@ -108,20 +111,13 @@ namespace All_Access_Project
             var newBuilding= new BuildingItem(BuildingName, BuildingDescription, DepartmentName, DepartmentHead, DepartmentContact);
             BuildingItems.Add(newBuilding);
             OnPropertyChanged(nameof(BuildingItems));
-            Console.WriteLine(App.All_Access_Database.ReadBuildings());
+            //App.All_Access_Database.CreateBuilding(newBuilding);
+            //Console.WriteLine(App.All_Access_Database.ReadBuildings());
             await Application.Current.MainPage.Navigation.PopAsync();
 
 
         }
-       
-
-        /*public ICommand OnItemSelected => new Command(async () =>
-        {
-            Console.WriteLine("Itemselected");
-            BuildingsPage buildings = this.OnItemSelected as BuildingsPage;
-            await Application.Current.MainPage.Navigation.PushAsync(buildings);
-        });*/
-
+      
 
 
     }

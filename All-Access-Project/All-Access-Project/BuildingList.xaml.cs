@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -32,8 +31,23 @@ namespace All_Access_Project
             BuildingsPage building = new BuildingsPage();
             building.BindingContext = e.Item;
             Console.WriteLine(e.Item);
+            Console.WriteLine(building.currentBuildingName);
+            var revCount = ReviewItemViewModel._reviewItems.Count;
+
+            for (int i = 0; i < revCount; i++)
+            {
+                Console.WriteLine("For loop accessed");
+                Console.WriteLine(ReviewItemViewModel._reviewItems[i].ReviewBuildingName);
+                if (ReviewItemViewModel._reviewItems[i].ReviewBuildingName == building.currentBuildingName)
+                {
+                    Console.WriteLine("If loop accessed");
+                    ReviewItemViewModel._sortedReviewItems.Add(ReviewItemViewModel._reviewItems[i]);
+                }
+            }
+            Console.WriteLine(ReviewItemViewModel._sortedReviewItems.Count);
             await Application.Current.MainPage.Navigation.PushAsync(building);
-            
+
+
         }
 
 
