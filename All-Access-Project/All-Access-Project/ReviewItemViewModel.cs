@@ -126,10 +126,6 @@ namespace All_Access_Project
                 ReviewItems.Add(new ReviewItem(2, "Having to wait 20 minutes for an elevator is awful. The classroom are spacious though", "Hunter McDaniel"));
             }
             
-            //Attempt to filter the ReivewItems for each page. The problem is ReviewItemViewModel() runs
-            //before the Command PushNewReviewForm. PushNewReviewForm is important because that is how you
-            //access the name of the building being clicked on (string BuildingName)
-            
 
         }
 
