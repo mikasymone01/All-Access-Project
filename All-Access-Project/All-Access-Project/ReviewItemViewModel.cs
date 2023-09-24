@@ -122,7 +122,8 @@ namespace All_Access_Project
                 ReviewItems.Add(new ReviewItem(3, "A very nice freshman dorm.There are only stairs to go in through the front entrance." +
                     "A wheelcahir user would have to enter through the back ramp which needs to be unlocked by faculty. There is an elevator inside, " +
                     "but it would constantly break throughout the year.", "Langston"));
-                ReviewItems.Add(new ReviewItem(3, "Its a big building so navigation was difficult and The elevators are extremely slow. Other than that, I loved having classes in this building.", "Hunter McDaniel"));
+                ReviewItems.Add(new ReviewItem(3, "Its a big building so navigation was difficult and The elevators are extremely slow. Other than that, " +
+                    "I loved having classes in this building.", "Hunter McDaniel"));
                 ReviewItems.Add(new ReviewItem(2, "Having to wait 20 minutes for an elevator is awful. The classroom are spacious though", "Hunter McDaniel"));
             }
             

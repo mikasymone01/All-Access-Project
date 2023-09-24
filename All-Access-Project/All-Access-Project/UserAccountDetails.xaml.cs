@@ -19,7 +19,8 @@ namespace All_Access_Project
 
         async void Button_Clicked(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(nameEntry.Text) || string.IsNullOrWhiteSpace(LastName.Text) || string.IsNullOrWhiteSpace(Password.Text) || string.IsNullOrWhiteSpace(Email.Text))
+            if (string.IsNullOrWhiteSpace(nameEntry.Text) || string.IsNullOrWhiteSpace(LastName.Text) || string.IsNullOrWhiteSpace(Password.Text) 
+                || string.IsNullOrWhiteSpace(Email.Text))
             {
                 await DisplayAlert("Invalid", "Blank or Whitespace value is Invalid!", "OK");
             }

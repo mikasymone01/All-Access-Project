@@ -14,7 +14,8 @@
         <Label x:Name="ReviewFormTitle" Text="{Binding BuildingName, Mode=TwoWay}" 
                TextColor="Black" FontSize="35" FontAttributes="Bold"/>
         <Label Text="How would you rate this building out of 5?" FontSize="20"/>
-        <StackLayout  RadioButtonGroup.GroupName ="ReviewValue" RadioButtonGroup.SelectedValue="{Binding NewReviewRatingValue, Mode=TwoWay}" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+        <StackLayout  RadioButtonGroup.GroupName ="ReviewValue" RadioButtonGroup.SelectedValue="{Binding NewReviewRatingValue, Mode=TwoWay}" 
+                      Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
 
             <RadioButton Content="1" Value="1"/>
             <RadioButton Content="2" Value="2"/>
@@ -29,3 +30,4 @@
         <Button Text="Submit Review" Margin="0,70,0,0" Command="{Binding AddReviewCommand}"/>
     </StackLayout>
 </ContentPage>
+    
